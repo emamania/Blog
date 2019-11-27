@@ -1,0 +1,29 @@
+.wel {
+    h1 {
+        color: var(--texto);
+    }
+}
+.whois {
+    background: var(--fondo);
+    padding: 20px 15px;
+    h6 {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-weight: 600;
+        font-size: 17px;
+        border-bottom: 1px solid var(--sucess);
+        width: 70%;
+        margin: 0 auto;
+        color: var(--texto);
+    }
+    div {
+        padding-top: 1rem;
+        font-size: 18px;
+        div {
+            display: flex;
+            i::before {
+                font-size: 14px;
+            }
+        }
+    }
+}
