@@ -1,16 +1,7 @@
 .shopping-cart {
     .column-labels {
         margin-top: 1em;
-        margin-bottom: 1em;
-        /* & .product-image, & .product-details, & .product-removal {
-            text-indent: -9999px;        
-        }
-        label {
-            padding-bottom: 15px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #fff;
-            color: #aaa;
-        } */
+        margin-bottom: 1em;        
     }
     .product {
         border: 1px solid #E8E8E8;
@@ -76,6 +67,16 @@
             }
         }
         .product-quantity {
+            div:first-child {
+                span {
+                    font-size: 11px;
+                }
+            }
+            div {
+                &:last-child {
+                    width: 85px;
+                }
+            }
             div {
                 display: flex;
                 justify-content: space-between;
@@ -129,11 +130,14 @@
                     }
                       
                 }
-                .x {padding: 0 .4rem;}
+                .x {padding: 0 .4rem;margin-left: .5rem;}
                 .price {
                     color:var(--texto);
                     position: relative;
                     font-size: 18px;
+                    &::before {
+                        content: '$ ';
+                    }
                 }
             }
             .product-line-price {
